@@ -157,3 +157,14 @@ cp scripts/ssh-testing ~server
 After a minute or two the commands will complete and you can log in at https://ncov.dide.ic.ac.uk:1443
 
 When authorising the OAuth application, be sure to grant it access to the organisation that you are used for auth (as specified in `config/orderly-web.yml`)
+
+## Users
+
+All users need to provide a project administrator (Rich or Nasuko) a GitHub username and one or more ssh public key.
+
+* **GitHub user name**: Go to go to github.com and make sure you are logged in. Your username will be shown in the top left below the github logo, or click the avatar in the top right and it will say "Signed in as **yourname**".
+* **SSH public key**: This is something we can use to verify your identity in a couple of situations.
+  * Mac and Linux users - if you have a file as "~/.ssh/id_rsa.pub" send that (you can display this file by running `cat ~/.ssh/id_rsa.pub`) and copying and pasting the result.  If you do not have one, run `ssh-keygen`, accept the default location and **add a password** when prompted.  Then copy the `id_rsa.pub` file as above.
+  * Windows users follow [these instructions](win-putty-keys.docx) to generate your keypair
+
+Please send these via the 2019-nCoV Slack if possible as a Direct Message.
